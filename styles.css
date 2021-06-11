@@ -84,9 +84,22 @@ hr{
     height: 50px;
     background-color: #e5f7fd;
     margin-top: 5px;
-    margin-left: 20px;
+    margin-left: 30px;
     padding: 10px 20px 5px 10px;
     border-radius: 5px;
+    position: relative;
+}
+.sms::before{
+    content: "";
+    width: 0;
+    position: absolute;
+    border: 20px solid #e5f7fd;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    transform: translateX(-14px);
+    top: 0;
+    left: 0;
 }
 .clock{
     margin-left: 20px;
@@ -100,8 +113,21 @@ hr{
     background-color: #FFF4F4;
     margin-top: 5px;
     margin-left: 100px;
-    padding: 10px 20px 10px 10px;
+    padding: 10px 5px 10px 10px;
     border-radius: 5px;
+    position: relative;
+}
+.sms-2::before{
+    content: "";
+    width: 0;
+    position: absolute;
+    border: 20px solid #FFF4F4;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    transform: translateX(14px);
+    top: 0;
+    right: 0;
 }
 .clock-2{
     margin-left: 380px;
@@ -114,17 +140,43 @@ hr{
     width: 90px;
     background-color: #C3E9F6;
     margin-top: 5px;
-    margin-left: 20px;
+    margin-left: 30px;
     padding: 10px 0px 10px 10px;
     border-radius: 5px;
+    position: relative;
+}
+.sms-3::before{
+    content: "";
+    width: 0;
+    position: absolute;
+    border: 20px solid #C3E9F6;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    transform: translateX(-14px);
+    top: 0;
+    left: 0;
 }
 .sms-4{
     width: 220px;
     background-color: #F7D9D7;
     margin-top: 10px;
     margin-left: 170px;
-    padding: 10px 20px 10px 10px;
+    padding: 10px 5px 10px 10px;
     border-radius: 5px;
+    position: relative;
+}
+.sms-4::before{
+    content: "";
+    width: 0;
+    position: absolute;
+    border: 20px solid #F7D9D7;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    transform: translateX(14px);
+    top: 0;
+    right: 0;
 }
 ::-webkit-input-placeholder{ font-size: 18px }
 input{
